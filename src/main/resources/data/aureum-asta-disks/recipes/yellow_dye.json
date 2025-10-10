@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "aureum-asta-disks:yellow_carnation"
+    }
+  ],
+  "result": {
+    "item": "minecraft:yellow_dye"
+  }
+}

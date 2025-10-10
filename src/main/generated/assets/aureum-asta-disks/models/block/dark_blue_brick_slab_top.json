@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "aureum-asta-disks:block/dark_blue_brick",
+    "side": "aureum-asta-disks:block/dark_blue_brick",
+    "top": "aureum-asta-disks:block/dark_blue_brick"
+  }
+}

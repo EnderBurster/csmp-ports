@@ -1,0 +1,48 @@
+{
+  "variants": {
+    "facing=south,lit=false": {
+      "model": "charter:block/pawn"
+    },
+    "facing=west,lit=false": {
+      "model": "charter:block/pawn",
+      "y": 90
+    },
+    "facing=north,lit=false": {
+      "model": "charter:block/pawn",
+      "y": 180
+    },
+    "facing=east,lit=false": {
+      "model": "charter:block/pawn",
+      "y": 270
+    },
+    "facing=up,lit=false": {
+      "model": "charter:block/pawn"
+    },
+    "facing=down,lit=false": {
+      "model": "charter:block/pawn",
+      "y": 90
+    },
+    "facing=south,lit=true": {
+      "model": "charter:block/pawn_lit"
+    },
+    "facing=west,lit=true": {
+      "model": "charter:block/pawn_lit",
+      "y": 90
+    },
+    "facing=north,lit=true": {
+      "model": "charter:block/pawn_lit",
+      "y": 180
+    },
+    "facing=east,lit=true": {
+      "model": "charter:block/pawn_lit",
+      "y": 270
+    },
+    "facing=up,lit=true": {
+      "model": "charter:block/pawn_lit"
+    },
+    "facing=down,lit=true": {
+      "model": "charter:block/pawn_lit",
+      "y": 90
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+	"parent": "minecraft:block/cube_all",
+	"credit": "Model by Luxintrus",
+	"textures": {
+		"0": "aureum-asta-disks:block/amarite_spark_side",
+		"1": "aureum-asta-disks:block/amarite_spark_bud",
+		"2": "aureum-asta-disks:block/amarite_spark_top",
+		"3": "aureum-asta-disks:block/amarite_spark_bottom",
+		"particle": "aureum-asta-disks:block/amarite_spark_side"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 10, 16],
+			"faces": {
+				"north": {"uv": [0, 6, 16, 16], "texture": "#0"},
+				"east": {"uv": [0, 6, 16, 16], "texture": "#0"},
+				"south": {"uv": [0, 6, 16, 16], "texture": "#0"},
+				"west": {"uv": [0, 6, 16, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#3"}
+			}
+		},
+		{
+			"from": [8, 10, 11],
+			"to": [8, 19, 17],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 14.5, 8]},
+			"faces": {
+				"north": {"uv": [5, 7, 11, 16], "texture": "#1"},
+				"east": {"uv": [11, 7, 5, 16], "texture": "#1"},
+				"south": {"uv": [5, 7, 11, 16], "texture": "#1"},
+				"west": {"uv": [5, 7, 11, 16], "texture": "#1"},
+				"up": {"uv": [5, 7, 11, 16], "texture": "#1"},
+				"down": {"uv": [5, 7, 11, 16], "texture": "#1"}
+			}
+		},
+		{
+			"from": [8, 10, -1],
+			"to": [8, 19, 5],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 14.5, 8]},
+			"faces": {
+				"north": {"uv": [5, 7, 11, 16], "texture": "#1"},
+				"east": {"uv": [5, 7, 11, 16], "texture": "#1"},
+				"south": {"uv": [5, 7, 11, 16], "texture": "#1"},
+				"west": {"uv": [11, 7, 5, 16], "texture": "#1"},
+				"up": {"uv": [5, 7, 11, 16], "texture": "#1"},
+				"down": {"uv": [5, 7, 11, 16], "texture": "#1"}
+			}
+		},
+		{
+			"from": [8, 10, -1],
+			"to": [8, 19, 5],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 14.5, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 6, 9], "texture": "#1"},
+				"east": {"uv": [5, 7, 11, 16], "texture": "#1"},
+				"south": {"uv": [0, 0, 6, 9], "texture": "#1"},
+				"west": {"uv": [11, 7, 5, 16], "texture": "#1"},
+				"up": {"uv": [0, 0, 6, 9], "texture": "#1"},
+				"down": {"uv": [5, 7, 11, 16], "texture": "#1"}
+			}
+		},
+		{
+			"from": [8, 10, 11],
+			"to": [8, 19, 17],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 14.5, 8]},
+			"faces": {
+				"north": {"uv": [5, 7, 11, 16], "texture": "#1"},
+				"east": {"uv": [11, 7, 5, 16], "texture": "#1"},
+				"south": {"uv": [5, 7, 11, 16], "texture": "#1"},
+				"west": {"uv": [5, 7, 11, 16], "texture": "#1"},
+				"up": {"uv": [5, 7, 11, 16], "texture": "#1"},
+				"down": {"uv": [5, 7, 11, 16], "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		0,
+		{
+			"name": "shards",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [1, 2, 3, 4]
+		}
+	]
+}

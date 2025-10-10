@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "aureum-asta-disks:block/yellow_sandstone_slab"
+    },
+    "type=double": {
+      "model": "aureum-asta-disks:block/yellow_sandstone"
+    },
+    "type=top": {
+      "model": "aureum-asta-disks:block/yellow_sandstone_slab_top"
+    }
+  }
+}

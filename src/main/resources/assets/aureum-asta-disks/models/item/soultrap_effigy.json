@@ -1,0 +1,6 @@
+{
+  "parent": "aureum-asta-disks:item/handheld_rotated",
+  "textures": {
+    "layer0": "aureum-asta-disks:item/soultrap_effigy"
+  }
+}

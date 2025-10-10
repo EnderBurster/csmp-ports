@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "aureum-asta-disks:amethyst_bricks"
+  },
+  "result": "aureum-asta-disks:chiseled_amethyst"
+}

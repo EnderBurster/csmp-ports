@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+	{
+	  "id": "aureum-asta-disks:pitchfork",
+	  "required": false
+	}
+  ]
+}

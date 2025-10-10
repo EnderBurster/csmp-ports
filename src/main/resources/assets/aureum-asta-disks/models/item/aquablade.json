@@ -1,0 +1,42 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"particle": "aureum-asta-disks:item/aquablade",
+		"layer0": "aureum-asta-disks:item/aquablade"
+	},
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 90],
+			"translation": [0, -2, -2.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, -90, 90],
+			"translation": [0, -2, -2.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 75],
+			"translation": [0, 1.25, -2.5]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -90, 75],
+			"translation": [0, 1.25, -2.5]
+		},
+		"ground": {
+			"translation": [0, 2, 0],
+			"scale": [0.65, 0.65, 0.65]
+		},
+		"gui": {
+			"translation": [0, 0, 0.75]
+		},
+		"head": {
+			"rotation": [-90, 0, 0],
+			"translation": [0.5, 10.5, 0]
+		},
+		"fixed": {
+			"translation": [0, 0, 0.75]
+		}
+	}
+}

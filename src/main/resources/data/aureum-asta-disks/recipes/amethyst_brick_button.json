@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "aureum-asta-disks:chiseled_amethyst"
+    }
+  ],
+  "result": {
+    "item": "aureum-asta-disks:amethyst_brick_button"
+  }
+}

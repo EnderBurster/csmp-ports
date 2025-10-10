@@ -1,0 +1,12 @@
+{
+  "map": [
+    {
+      "predicate": {
+        "materialPredicate": {
+          "texture": "aureum-asta-disks:textures/entity/soulfork.png"
+        }
+      },
+      "material": "canvas:emissive_transform"
+    }
+  ]
+}

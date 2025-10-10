@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "aureum-asta-disks:amethyst_bricks"
+    }
+  },
+  "pattern": [
+    "A",
+    "A"
+  ],
+  "result": {
+    "count": 2,
+    "item": "aureum-asta-disks:amethyst_pillar"
+  }
+}

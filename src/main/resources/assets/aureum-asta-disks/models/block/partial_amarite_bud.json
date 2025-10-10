@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "aureum-asta-disks:block/partial_amarite_bud"
+  }
+}

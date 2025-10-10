@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "aureum-asta-disks:block/yellow_carnation_bouquet_top"
+  }
+}

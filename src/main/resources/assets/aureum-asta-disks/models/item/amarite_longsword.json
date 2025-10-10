@@ -1,0 +1,101 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "aureum-asta-disks:item/amarite_longsword",
+    "layer1": "aureum-asta-disks:item/amarite_longsword_overlay"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "aureum-asta-disks:third_person_left_hand": 1
+      },
+      "model": "aureum-asta-disks:item/amarite_longsword_handheld"
+    },
+    {
+      "predicate": {
+        "aureum-asta-disks:third_person_right_hand": 1
+      },
+      "model": "aureum-asta-disks:item/amarite_longsword_handheld"
+    },
+    {
+      "predicate": {
+        "aureum-asta-disks:first_person_left_hand": 1
+      },
+      "model": "aureum-asta-disks:item/amarite_longsword_handheld"
+    },
+    {
+      "predicate": {
+        "aureum-asta-disks:first_person_right_hand": 1
+      },
+      "model": "aureum-asta-disks:item/amarite_longsword_handheld"
+    },
+    {
+      "predicate": {
+        "aureum-asta-disks:fixed": 1
+      },
+      "model": "aureum-asta-disks:item/amarite_longsword_handheld"
+    },
+    {
+      "predicate": {
+        "aureum-asta-disks:third_person_left_hand": 1,
+        "aureum-asta-disks:blocking": 1
+      },
+      "model": "aureum-asta-disks:item/amarite_longsword_blocking"
+    },
+    {
+      "predicate": {
+        "aureum-asta-disks:third_person_right_hand": 1,
+        "aureum-asta-disks:blocking": 1
+      },
+      "model": "aureum-asta-disks:item/amarite_longsword_blocking"
+    },
+    {
+      "predicate": {
+        "aureum-asta-disks:first_person_left_hand": 1,
+        "aureum-asta-disks:blocking": 1
+      },
+      "model": "aureum-asta-disks:item/amarite_longsword_blocking"
+    },
+    {
+      "predicate": {
+        "aureum-asta-disks:first_person_right_hand": 1,
+        "aureum-asta-disks:blocking": 1
+      },
+      "model": "aureum-asta-disks:item/amarite_longsword_blocking"
+    },
+    {
+      "predicate": {
+        "aureum-asta-disks:third_person_left_hand": 1,
+        "aureum-asta-disks:accumulate": 1
+      },
+      "model": "aureum-asta-disks:item/amarite_longsword_accumulate"
+    },
+    {
+      "predicate": {
+        "aureum-asta-disks:third_person_right_hand": 1,
+        "aureum-asta-disks:accumulate": 1
+      },
+      "model": "aureum-asta-disks:item/amarite_longsword_accumulate"
+    },
+    {
+      "predicate": {
+        "aureum-asta-disks:first_person_left_hand": 1,
+        "aureum-asta-disks:accumulate": 1
+      },
+      "model": "aureum-asta-disks:item/amarite_longsword_accumulate"
+    },
+    {
+      "predicate": {
+        "aureum-asta-disks:first_person_right_hand": 1,
+        "aureum-asta-disks:accumulate": 1
+      },
+      "model": "aureum-asta-disks:item/amarite_longsword_accumulate"
+    },
+    {
+      "predicate": {
+        "aureum-asta-disks:malignant": 1
+      },
+      "model": "aureum-asta-disks:item/amarite_longsword_malignant"
+    }
+  ]
+}

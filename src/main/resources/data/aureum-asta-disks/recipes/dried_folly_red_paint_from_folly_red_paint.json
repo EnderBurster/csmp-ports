@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "aureum-asta-disks:folly_red_paint"
+  },
+  "result": "aureum-asta-disks:dried_folly_red_paint",
+  "experience": 0.05,
+  "cookingtime": 200
+}

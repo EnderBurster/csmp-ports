@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "aureum-asta-disks:amarite_shard"
+    },
+    "B": {
+      "item": "aureum-asta-disks:amarite_block"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    }
+  },
+  "pattern": [
+    "BGA",
+    "G G",
+    "LGB"
+  ],
+  "result": {
+    "item": "aureum-asta-disks:amarite_disc"
+  }
+}

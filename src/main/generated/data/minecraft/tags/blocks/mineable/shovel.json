@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "aureum-asta-disks:gunpowder_block",
+    "aureum-asta-disks:folly_red_paint",
+    "aureum-asta-disks:fresh_folly_red_paint",
+    "aureum-asta-disks:dried_folly_red_paint"
+  ]
+}

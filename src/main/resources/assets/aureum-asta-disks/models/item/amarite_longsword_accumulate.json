@@ -1,0 +1,46 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "aureum-asta-disks:item/amarite_longsword_handheld",
+		"layer1": "aureum-asta-disks:item/amarite_longsword_handheld_overlay"
+	},
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-90, 0, 45],
+			"translation": [-2, -2, -15],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [30, 0, 10],
+			"translation": [-9.75, 3.75, 3],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"firstperson_righthand": {
+			"rotation": [-90, 0, 45],
+			"translation": [-9, -1, -12],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 0, 20],
+			"translation": [-8.75, 5, 0.25],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"ground": {
+			"translation": [1.25, 7, 0]
+		},
+    "gui": {
+      "translation": [2.5, 2.5, 0],
+      "scale": [1.25, 1.25, 0.625]
+    },
+    "head": {
+      "rotation": [0, 90, 45],
+      "translation": [0, 21.25, 0],
+      "scale": [2, 2, 1]
+    },
+    "fixed": {
+      "translation": [2, 2, 0],
+      "scale": [1, 1, 0.5]
+    }
+	}
+}

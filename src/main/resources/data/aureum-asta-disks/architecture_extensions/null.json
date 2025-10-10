@@ -1,0 +1,16 @@
+{
+  "base_block": "aureum-asta-disks:amethyst_bricks",
+  "map_color": "purple",
+  "only_if_present": "aureum-asta-disks",
+  "recipe": "stonecutting",
+  "texture": "all",
+  "types": [
+    "arch",
+    "octagonal_column",
+    "round_arch",
+    "roof",
+    "wall_column",
+    "wall_post",
+    "facade"
+  ]
+}

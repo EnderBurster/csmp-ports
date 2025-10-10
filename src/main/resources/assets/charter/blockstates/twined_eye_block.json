@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+      "model": "charter:block/twined_eye_block"
+      },
+      {
+        "model": "charter:block/twined_eye_block_1"
+      }
+    ]
+  }
+}

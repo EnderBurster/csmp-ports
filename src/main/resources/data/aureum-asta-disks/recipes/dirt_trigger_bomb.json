@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DDD",
+    "DBD",
+    "DDD"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:dirt"
+    },
+    "B": {
+      "item": "aureum-asta-disks:trigger_bomb"
+    }
+  },
+  "result": {
+    "item": "aureum-asta-disks:dirt_trigger_bomb"
+  }
+}

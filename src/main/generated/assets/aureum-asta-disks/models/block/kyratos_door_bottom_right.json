@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right",
+  "textures": {
+    "bottom": "aureum-asta-disks:block/kyratos_door_bottom",
+    "top": "aureum-asta-disks:block/kyratos_door_bottom"
+  }
+}

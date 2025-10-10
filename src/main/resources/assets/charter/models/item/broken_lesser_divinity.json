@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "charter:item/broken_lesser_divinity"
+  }
+}

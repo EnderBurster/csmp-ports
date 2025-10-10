@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "aureum-asta-disks:item/soulfork"
+  }
+}

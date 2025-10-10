@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "aureum-asta-disks:stripminer",
+    "aureum-asta-disks:cold_digger",
+    "aureum-asta-disks:kyratos_door",
+    "minecraft:bamboo_mosaic",
+    "minecraft:bamboo_mosaic_slab",
+    "minecraft:bamboo_mosaic_stairs",
+    {
+      "id": "#minecraft:all_hanging_signs",
+      "required": false
+    },
+    {
+      "id": "#minecraft:bamboo_blocks",
+      "required": false
+    },
+    "minecraft:chiseled_bookshelf"
+  ]
+}

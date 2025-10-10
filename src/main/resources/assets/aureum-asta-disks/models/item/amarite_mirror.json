@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "aureum-asta-disks:item/mirror_frame",
+    "layer1": "aureum-asta-disks:item/mirror_inside"
+  }
+}

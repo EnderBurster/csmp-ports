@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "aureum-asta-disks:block/protection_rune_top",
+    "side": "aureum-asta-disks:block/protection_rune"
+  }
+}

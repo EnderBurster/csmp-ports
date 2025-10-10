@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "aureum-asta-disks:amarite_shard"
+    },
+    "B": {
+      "item": "aureum-asta-disks:amarite_block"
+    },
+    "G": {
+      "item": "minecraft:gold_block"
+    },
+    "N": {
+      "item": "minecraft:netherite_sword"
+    }
+  },
+  "pattern": [
+    " AA",
+    "GBA",
+    "NG "
+  ],
+  "result": {
+    "item": "aureum-asta-disks:amarite_longsword"
+  }
+}

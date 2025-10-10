@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "aureum-asta-disks:yellow_carnation_bouquet"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "aureum-asta-disks:yellow_carnation"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "aureum-asta-disks:item/mask/moon"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "aureum-asta-disks:head": 1
+      },
+      "model": "aureum-asta-disks:mask/moon_mask_worn"
+    }
+  ]
+}

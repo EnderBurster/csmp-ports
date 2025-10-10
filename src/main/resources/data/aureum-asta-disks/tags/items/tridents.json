@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:trident",
+    "aureum-asta-disks:pitchfork",
+    "aureum-asta-disks:hellfork",
+    "aureum-asta-disks:soulfork",
+    "aureum-asta-disks:elder_trident",
+    "aureum-asta-disks:atlan"
+  ]
+}

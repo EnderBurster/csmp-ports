@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "aureum-asta-disks:block/kyratos_pillar_top",
+    "side": "aureum-asta-disks:block/kyratos_pillar"
+  }
+}

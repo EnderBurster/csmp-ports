@@ -1,0 +1,110 @@
+{
+  "length": 200,
+  "path": {
+    "segments": [
+      {
+        "type": "cutscenes:calculated",
+        "x": {
+          "type": "cutscenes:spline",
+          "points": [
+            -6,
+            -2,
+            -4,
+            3,
+            {
+              "type": "cutscenes:mul",
+              "arg1": {
+                "type": "cutscenes:add",
+                "arg1": {
+                  "type": "cutscenes:sin",
+                  "arg": "cutscenes:16_pi_t"
+                },
+                "arg2": 2
+              },
+              "arg2": 2
+            },
+            {
+              "type": "cutscenes:add",
+              "arg1": "t",
+              "arg2": 5
+            }
+          ]
+        },
+        "y": {
+          "type": "cutscenes:clamp",
+          "input": {
+            "type": "cutscenes:chain",
+            "argument": {
+              "type": "cutscenes:add",
+              "arg1": {
+                "type": "cutscenes:mul",
+                "arg1": "t",
+                "arg2": 3
+              },
+              "arg2": 6.333
+            },
+            "easing": {
+              "type": "cutscenes:div",
+              "arg1": {
+                "type": "cutscenes:tan",
+                "arg": {
+                  "type": "cutscenes:pow",
+                  "arg1": {
+                    "type": "cutscenes:sin",
+                    "arg": "t"
+                  },
+                  "arg2": "t"
+                }
+              },
+              "arg2": {
+                "type": "cutscenes:cos",
+                "arg": {
+                  "type": "cutscenes:square",
+                  "arg": "t"
+                }
+              }
+            }
+          },
+          "min": -3,
+          "max": 3
+        },
+        "z": {
+          "type": "cutscenes:sin",
+          "arg": {
+            "type": "cutscenes:mul",
+            "arg1": "t",
+            "arg2": {
+              "type": "cutscenes:mul",
+              "arg1": "pi",
+              "arg2": 4
+            }
+          }
+        }
+      }
+    ]
+  },
+  "rotation": {
+    "segments": [
+      {
+        "type": "cutscenes:calculated",
+        "x": 0,
+        "y": {
+          "type": "cutscenes:mul",
+          "arg1": {
+            "type": "cutscenes:cos",
+            "arg": "cutscenes:16_pi_t"
+          },
+          "arg2": 5
+        },
+        "z": {
+          "type": "cutscenes:mul",
+          "arg1": {
+            "type": "cutscenes:sin",
+            "arg": "cutscenes:16_pi_t"
+          },
+          "arg2": 10
+        }
+      }
+    ]
+  }
+}

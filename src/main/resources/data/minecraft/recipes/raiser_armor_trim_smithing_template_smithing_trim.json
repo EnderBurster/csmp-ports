@@ -1,0 +1,12 @@
+{
+  "type": "aureum-asta-disks:trim_recipe_serializer",
+  "addition": {
+    "tag": "minecraft:trim_materials"
+  },
+  "base": {
+    "tag": "minecraft:trimmable_armor"
+  },
+  "template": {
+    "item": "minecraft:raiser_armor_trim_smithing_template"
+  }
+}

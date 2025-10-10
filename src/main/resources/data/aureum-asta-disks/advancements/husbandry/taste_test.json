@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:husbandry/root",
+  "display": {
+    "icon": {
+      "item": "aureum-asta-disks:blue_poison_dart_frog_bowl"
+    },
+    "title": {
+      "translate": "aureum-asta-disks:advancements.husbandry.taste_test.title"
+    },
+    "description": {
+      "translate": "aureum-asta-disks:advancements.husbandry.taste_test.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "lick_frog": {
+      "trigger": "consume_item",
+      "conditions": {
+        "item": {
+          "tag": "aureum-asta-disks:poison_dart_frog_bowls"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "lick_frog"
+    ]
+  ]
+}

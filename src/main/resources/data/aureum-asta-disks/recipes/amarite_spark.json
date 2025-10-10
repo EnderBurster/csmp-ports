@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "aureum-asta-disks:amarite_shard"
+    },
+    "B": {
+      "item": "aureum-asta-disks:amarite_shard"
+    },
+    "G": {
+      "item": "minecraft:glowstone"
+    }
+  },
+  "pattern": [
+    " A ",
+    "AGA",
+    " B "
+  ],
+  "result": {
+    "item": "aureum-asta-disks:amarite_spark"
+  }
+}

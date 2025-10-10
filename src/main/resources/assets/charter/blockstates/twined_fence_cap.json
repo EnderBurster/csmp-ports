@@ -1,0 +1,49 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "charter:block/twined_fence/twined_fence_cap_post"
+      },
+      "when": {
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "west": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "charter:block/twined_fence/twined_fence_cap_side"
+      },
+      "when": {
+        "north": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "charter:block/twined_fence/twined_fence_cap_side",
+        "y": 90
+      },
+      "when": {
+        "east": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "charter:block/twined_fence/twined_fence_cap_side_alt"
+      },
+      "when": {
+        "south": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "charter:block/twined_fence/twined_fence_cap_side_alt",
+        "y": 90
+      },
+      "when": {
+        "west": "true"
+      }
+    }
+  ]
+}

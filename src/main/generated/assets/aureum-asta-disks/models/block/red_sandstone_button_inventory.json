@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "aureum-asta-disks:block/red_sandstone"
+  }
+}

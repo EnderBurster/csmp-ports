@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "aureum-asta-disks:elysium_helmet",
+      "required": false
+    },
+    {
+      "id": "aureum-asta-disks:elysium_chestplate",
+      "required": false
+    },
+    {
+      "id": "aureum-asta-disks:elysium_leggings",
+      "required": false
+    },
+    {
+      "id": "aureum-asta-disks:elysium_boots",
+      "required": false
+    }
+  ]
+}

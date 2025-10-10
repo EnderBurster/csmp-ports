@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "overrides": [
+    {
+      "model": "aureum-asta-disks:item/yellow_bundle_filled",
+      "predicate": {
+        "aureum-asta-disks:filled": 1.0E-7
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "aureum-asta-disks:item/yellow_bundle"
+  }
+}

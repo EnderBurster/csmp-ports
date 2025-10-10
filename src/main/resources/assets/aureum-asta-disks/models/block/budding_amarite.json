@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "aureum-asta-disks:block/budding_amarite",
+    "side": "aureum-asta-disks:block/amarite_block_side"
+  }
+}

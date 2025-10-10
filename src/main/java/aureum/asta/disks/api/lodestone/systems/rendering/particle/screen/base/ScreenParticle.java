@@ -1,0 +1,122 @@
+package aureum.asta.disks.api.lodestone.systems.rendering.particle.screen.base;
+
+import net.minecraft.world.World;
+import net.minecraft.client.render.BufferBuilder;
+import net.minecraft.client.particle.ParticleTextureSheet;
+import net.minecraft.util.math.random.Random;
+
+public abstract class ScreenParticle {
+   public final World clientWorld;
+   public double prevX;
+   public double prevY;
+   public double x;
+   public double y;
+   public double velocityX;
+   public double velocityY;
+   public double totalX;
+   public double totalY;
+   public boolean removed;
+   public final Random random = Random.create();
+   public int age;
+   public int maxAge;
+   public float gravityStrength;
+   public float scale = 1.0F;
+   public float red = 1.0F;
+   public float green = 1.0F;
+   public float blue = 1.0F;
+   public float alpha = 1.0F;
+   public float angle;
+   public float prevAngle;
+   public float velocityMultiplier = 0.98F;
+   public RenderOrder renderOrder = RenderOrder.AFTER_EVERYTHING;
+
+   protected ScreenParticle(World clientWorld, double pX, double pY) {
+      this.clientWorld = clientWorld;
+      this.setScale(0.2F);
+      this.x = pX;
+      this.y = pY;
+      this.prevX = pX;
+      this.prevY = pY;
+      this.maxAge = (int)(4.0F / (this.random.nextFloat() * 0.9F + 0.1F));
+   }
+
+   public ScreenParticle(World clientWorld, double pX, double pY, double pXSpeed, double pYSpeed) {
+      this(clientWorld, pX, pY);
+      this.velocityX = pXSpeed + (Math.random() * 2.0 - 1.0) * 0.4F;
+      this.velocityY = pYSpeed + (Math.random() * 2.0 - 1.0) * 0.4F;
+      double d0 = (Math.random() + Math.random() + 1.0) * 0.15F;
+      double d1 = Math.sqrt(this.velocityX * this.velocityX + this.velocityY * this.velocityY);
+      this.velocityX = this.velocityX / d1 * d0 * 0.4F;
+      this.velocityY = this.velocityY / d1 * d0 * 0.4F + 0.1F;
+   }
+
+   public void setParticleSpeed(double pXd, double pYd) {
+      this.velocityX = pXd;
+      this.velocityY = pYd;
+   }
+
+   public ScreenParticle setScale(float size) {
+      this.scale = size;
+      return this;
+   }
+
+   public void setColor(float pParticleRed, float pParticleGreen, float pParticleBlue) {
+      this.red = pParticleRed;
+      this.green = pParticleGreen;
+      this.blue = pParticleBlue;
+   }
+
+   protected void setAlpha(float pAlpha) {
+      this.alpha = pAlpha;
+   }
+
+   public void setMaxAge(int pMaxAge) {
+      this.maxAge = pMaxAge;
+   }
+
+   public int getMaxAge() {
+      return this.maxAge;
+   }
+
+   public void setRenderOrder(RenderOrder renderOrder) {
+      this.renderOrder = renderOrder;
+   }
+
+   public RenderOrder getRenderOrder() {
+      return this.renderOrder;
+   }
+
+   public void tick() {
+      this.prevX = this.x;
+      this.prevY = this.y;
+      if (this.age++ >= this.maxAge) {
+         this.remove();
+      } else {
+         this.velocityY = this.velocityY - 0.04 * (double)this.gravityStrength;
+         this.velocityX = this.velocityX * (double)this.velocityMultiplier;
+         this.velocityY = this.velocityY * (double)this.velocityMultiplier;
+         this.x = this.x + this.velocityX;
+         this.y = this.y + this.velocityY;
+         this.totalX = this.totalX + this.velocityX;
+         this.totalY = this.totalY + this.velocityY;
+      }
+   }
+
+   public abstract void render(BufferBuilder var1);
+
+   public abstract ParticleTextureSheet getTextureSheet();
+
+   public void remove() {
+      this.removed = true;
+   }
+
+   public boolean isAlive() {
+      return !this.removed;
+   }
+
+   public static enum RenderOrder {
+      BEFORE_UI,
+      BEFORE_TOOLTIPS,
+      AFTER_EVERYTHING;
+   }
+}

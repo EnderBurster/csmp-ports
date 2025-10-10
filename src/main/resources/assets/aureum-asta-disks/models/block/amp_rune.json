@@ -1,0 +1,49 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "aureum-asta-disks:block/amp_rune",
+		"1": "aureum-asta-disks:block/creation_rune_top",
+		"particle": "aureum-asta-disks:block/amp_rune"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 1, 16],
+			"faces": {
+				"north": {"uv": [7.5, 6.75, 11.5, 7], "texture": "#0"},
+				"east": {"uv": [7.5, 6.75, 11.5, 7], "texture": "#0"},
+				"south": {"uv": [7.5, 6.75, 11.5, 7], "texture": "#0"},
+				"west": {"uv": [7.5, 6.75, 11.5, 7], "texture": "#0"},
+				"up": {"uv": [4, 4, 0, 0], "texture": "#0"},
+				"down": {"uv": [16, 0, 0, 16], "texture": "#1"}
+			}
+		},
+		{
+			"from": [1, 1, 1],
+			"to": [15, 2, 15],
+			"faces": {
+				"north": {"uv": [0, 10, 3.5, 10.25], "texture": "#0"},
+				"east": {"uv": [0, 10, 3.5, 10.25], "texture": "#0"},
+				"south": {"uv": [0, 10, 3.5, 10.25], "texture": "#0"},
+				"west": {"uv": [0, 10, 3.5, 10.25], "texture": "#0"},
+				"up": {"uv": [7.5, 3.5, 4, 0], "texture": "#0"},
+				"down": {"uv": [7.5, 3.5, 4, 7], "texture": "#0"}
+			}
+		},
+		{
+			"from": [2, 2, 2],
+			"to": [14, 10, 14],
+			"faces": {
+				"north": {"uv": [0, 8, 3, 10], "texture": "#0"},
+				"east": {"uv": [7.5, 2, 10.5, 4], "texture": "#0"},
+				"south": {"uv": [7.5, 2, 10.5, 4], "texture": "#0"},
+				"west": {"uv": [0, 8, 3, 10], "texture": "#0"},
+				"up": {"uv": [7, 10, 4, 7], "texture": "#0"},
+				"down": {"uv": [10, 7, 7, 10], "texture": "#0"}
+			}
+		}
+	],
+	"display": {}
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "aureum-asta-disks:block/dry_ice",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "aureum-asta-disks:block/dry_ice"
+    },
+    "axis=z": {
+      "model": "aureum-asta-disks:block/dry_ice",
+      "x": 90
+    }
+  }
+}

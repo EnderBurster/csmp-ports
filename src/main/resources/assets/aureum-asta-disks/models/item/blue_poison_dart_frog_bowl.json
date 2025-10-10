@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "aureum-asta-disks:item/blue_poison_dart_frog_bowl"
+  }
+}

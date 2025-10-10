@@ -1,0 +1,12 @@
+{
+ "item.aureum-asta-disks.ancient_trident": "Antik Üçlü Mızrak",
+ "item.aureum-asta-disks.elder_guardian_eye": "Yaşlı Gardiyan Gözü",
+ "item.aureum-asta-disks.pitchfork": "Pitchfork",
+ "item.aureum-asta-disks.hellfork": "Hellfork",
+ "item.aureum-asta-disks.soulfork": "Soulfork",
+ "item.aureum-asta-disks.elder_trident": "Kıdemli Üçlü Mızrak",
+ "item.aureum-asta-disks.atlan": "Atlan",
+ "death.attack.hellfork_heat": "%1$s kızardı",
+ "aureum-asta-disks:tooltip.owned_by": "(%s adlı oyuncunun)",
+ "aureum-asta-disks:trident_recall_fail": "Üçlü mızraklarını geri çağırmak başarısız oldu"
+}

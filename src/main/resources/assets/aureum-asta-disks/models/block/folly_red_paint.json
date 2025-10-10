@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "aureum-asta-disks:block/folly_red_paint"
+  }
+}

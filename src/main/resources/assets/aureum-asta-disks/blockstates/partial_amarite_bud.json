@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "aureum-asta-disks:block/partial_amarite_bud",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "aureum-asta-disks:block/partial_amarite_bud",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "aureum-asta-disks:block/partial_amarite_bud",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "aureum-asta-disks:block/partial_amarite_bud",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "aureum-asta-disks:block/partial_amarite_bud"
+    },
+    "facing=west": {
+      "model": "aureum-asta-disks:block/partial_amarite_bud",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

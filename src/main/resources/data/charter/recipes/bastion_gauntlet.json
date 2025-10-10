@@ -1,0 +1,20 @@
+{
+  "type": "charter:uuid_locked_shaped",
+  "uuid": "e0f927bf-91fe-3015-97d8-41698d0cd92d",
+  "pattern": [
+    "SS ",
+    "STS",
+    " S "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "T": {
+      "item": "charter:arm"
+    }
+  },
+  "result": {
+    "item": "charter:bastion_gauntlet"
+  }
+}

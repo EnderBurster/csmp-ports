@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "aureum-asta-disks:block/creation_rune_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "aureum-asta-disks:block/creation_rune"
+    },
+    "axis=z": {
+      "model": "aureum-asta-disks:block/creation_rune_horizontal",
+      "x": 90
+    }
+  }
+}

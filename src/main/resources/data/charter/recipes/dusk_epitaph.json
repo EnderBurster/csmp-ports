@@ -1,0 +1,23 @@
+{
+  "type": "charter:uuid_locked_shaped",
+  "uuid": "e0f927bf-91fe-3015-97d8-41698d0cd92d",
+  "pattern": [
+    "  N",
+    "TN ",
+    "ST "
+  ],
+  "key": {
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "T": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "result": {
+    "item": "charter:dusk_epitaph"
+  }
+}

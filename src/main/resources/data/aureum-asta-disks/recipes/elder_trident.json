@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:trident"
+  },
+  "addition": {
+    "item": "aureum-asta-disks:elder_guardian_eye"
+  },
+  "result": {
+    "item": "aureum-asta-disks:elder_trident"
+  }
+}

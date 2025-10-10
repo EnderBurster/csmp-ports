@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "aureum-asta-disks:kyratos"
+  },
+  "result": "aureum-asta-disks:kyratos_brick_pressure_plate"
+}

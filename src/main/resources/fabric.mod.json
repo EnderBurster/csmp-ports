@@ -1,0 +1,155 @@
+{
+	"schemaVersion": 1,
+	"id": "aureum-asta-disks",
+	"version": "${version}",
+	"name": "Aureum Asta",
+	"description": "A mod which adds new music discs, among other changes.",
+	"authors": [
+		"Ender Burster"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/aureum-asta-disks/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"emi": [
+			"aureum.asta.disks.integration.emi.EmiCompatPlugin",
+			"aureum.asta.disks.ports.bundle.BundleBackportishEmiPlugin"
+		],
+		"main": [
+			"aureum.asta.disks.AureumAstaDisks",
+			"aureum.asta.disks.ports.other.ReachEntityAttributes",
+			"aureum.asta.disks.ports.pickyourpoison.PickYourPoison",
+			"aureum.asta.disks.ports.impaled.Impaled",
+			"aureum.asta.disks.ports.impaled.SincereLoyalty",
+			"aureum.asta.disks.ports.impaled.MialeeMisc",
+			"aureum.asta.disks.ports.other.FireworkFrenzy",
+			"aureum.asta.disks.api.lodestone.LodestoneLib",
+			"aureum.asta.disks.ports.amarite.amarite.Amarite",
+			"aureum.asta.disks.ports.amarite.mialib.MiaLib",
+			"aureum.asta.disks.ports.blast.common.Blast",
+			"aureum.asta.disks.ports.mason.MasonDecor",
+			"aureum.asta.disks.ports.minecarttweaks.MinecartTweaks",
+			"aureum.asta.disks.ports.bundle.BundleBackportish",
+			"aureum.asta.disks.ports.mace.FaithfulMace",
+			"aureum.asta.disks.ports.charter.Charter"
+
+		],
+		"client": [
+			"aureum.asta.disks.client.AureumAstaDisksClient",
+			"aureum.asta.disks.client.PickYourPoisonClient",
+			"aureum.asta.disks.client.ImpaledClient",
+			"aureum.asta.disks.ports.impaled.SincereLoyaltyClient::INSTANCE",
+			"aureum.asta.disks.client.FireworkFrenzyClient",
+			"aureum.asta.disks.api.lodestone.LodestoneLibClient",
+			"aureum.asta.disks.ports.amarite.mialib.MiaLibClient",
+			"aureum.asta.disks.ports.amarite.amarite.AmariteClient",
+			"aureum.asta.disks.ports.blast.client.BlastClient",
+			"aureum.asta.disks.ports.mason.MasonDecorClient",
+			"aureum.asta.disks.ports.minecarttweaks.client.MinecartTweaksClient",
+			"aureum.asta.disks.ports.bundle.client.BundleBackportishClient",
+			"aureum.asta.disks.ports.mace.client.FaithfulMaceClient",
+			"aureum.asta.disks.ports.charter.CharterClient"
+		],
+		"server": [
+			"aureum.asta.disks.ports.amarite.mialib.MiaLibServer"
+		],
+		"fabric-datagen": [
+			"aureum.asta.disks.init.AstaDataGenerator"
+		],
+		"cardinal-components" : [
+			"aureum.asta.disks.cca.ArsenalComponents",
+			"aureum.asta.disks.cca.PickYourPoisonEntityComponents",
+			"aureum.asta.disks.ports.mason.init.MasonComponents"
+		],
+		"cardinal-components-block": [
+			"aureum.asta.disks.ports.amarite.amarite.Amarite"
+		],
+		"cardinal-components-entity": [
+			"aureum.asta.disks.ports.amarite.amarite.Amarite",
+			"aureum.asta.disks.ports.amarite.mialib.MiaLib",
+			"aureum.asta.disks.ports.charter.common.component.CharterComponents",
+			"aureum.asta.disks.init.AstaEntityComponents",
+			"aureum.asta.disks.ports.elysium.Elysium",
+			"aureum.asta.disks.AureumAstaDisks"
+		],
+		"cardinal-components-world": [
+			"aureum.asta.disks.ports.charter.common.component.CharterComponents",
+			"aureum.asta.disks.AureumAstaDisks"
+		],
+		"modmenu": [
+			"aureum.asta.disks.ports.minecarttweaks.common.compat.MinecartTweaksModMenu"
+		],
+		"dynamiclights": [
+			"aureum.asta.disks.dynamiclight.AstaDynamicLightInitializer",
+			"aureum.asta.disks.ports.charter.common.init.CharterDynamicLightInitializer"
+		]
+	},
+	"mixins": [
+		"aureum-asta-disks.mixins.json"
+	],
+	"accessWidener": "asta.accesswidener",
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*",
+		"enchancement": "1.19-21"
+	},
+	"custom": {
+		"loom:injected_interfaces": {
+			"net/minecraft/class_8109": ["aureum/asta/disks/damage/DamageSourcesExt"],
+			"net/minecraft/class_2581": ["aureum/asta/disks/ports/amarite/mialib/interfaces/MBeaconBeamSegment"],
+			"net/minecraft/class_1792": ["aureum/asta/disks/ports/amarite/mialib/interfaces/MItem"],
+			"net/minecraft/class_1761": ["aureum/asta/disks/ports/amarite/mialib/interfaces/MItemGroup"],
+			"net/minecraft/class_1799": ["aureum/asta/disks/ports/amarite/mialib/interfaces/MItemStack"],
+			"net/minecraft/class_1657": [
+				"aureum/asta/disks/ports/amarite/mialib/interfaces/MPlayerEntity",
+				"aureum/asta/disks/ports/mace/PlayerEntityMaceInterface"],
+			"net/minecraft/class_2561": ["aureum/asta/disks/ports/amarite/mialib/interfaces/MText"],
+			"net/minecraft/class_1297": ["aureum/asta/disks/ports/amarite/mialib/interfaces/MEntity"],
+			"net/minecraft/class_1309": ["aureum/asta/disks/ports/amarite/mialib/interfaces/MLivingEntity"],
+			"net/minecraft/class_1688": [
+				"aureum/asta/disks/ports/minecarttweaks/api/Linkable",
+				"aureum/asta/disks/ports/minecarttweaks/common/utils/MinecartPhysicsAccess"
+			],
+			"net/minecraft/class_1887": ["aureum/asta/disks/ports/mace/EnchantmentSmashDamageInterface"],
+			"net/minecraft/class_703": ["aureum/asta/disks/ports/amarite/mialib/interfaces/MParticle"],
+			"net/minecraft/class_465": ["aureum/asta/disks/ports/enchancement/MEnchantingTableScreen"]
+		},
+		"cardinal-components": [
+			"aureum-asta-disks:back_weapon",
+			"aureum-asta-disks:numbnessdamage",
+			"aureum-asta-disks:frograin",
+			"aureum-asta-disks:holding",
+			"aureum-asta-disks:identifier_cooldown",
+			"aureum-asta-disks:beacon",
+			"aureum-asta-disks:dash",
+			"aureum-asta-disks:double_dash",
+			"aureum-asta-disks:accumulate",
+			"aureum-asta-disks:malignancy",
+			"aureum-asta-disks:disc",
+			"aureum-asta-disks:pylon",
+			"aureum-asta-disks:budded",
+			"aureum-asta-disks:rider",
+			"aureum-asta-disks:meteor",
+			"aureum-asta-disks:thunderstruck",
+			"aureum-asta-disks:heating_items",
+			"aureum-asta-disks:elysium_armour",
+			"aureum-asta-disks:page",
+			"aureum-asta-disks:aquablade",
+			"aureum-asta-disks:vortex",
+			"aureum-asta-disks:sharks",
+			"aureum-asta-disks:kyratos",
+			"charter:player",
+			"charter:charter",
+			"charter:arm"
+		]
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

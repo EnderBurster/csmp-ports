@@ -1,0 +1,41 @@
+{
+  "parent": "aureum-asta-disks:husbandry/taste_test",
+  "display": {
+    "icon": {
+      "item": "aureum-asta-disks:golden_poison_dart_frog_bowl"
+    },
+    "title": {
+      "translate": "aureum-asta-disks:advancements.husbandry.taste_the_rainbow.title"
+    },
+    "description": {
+      "translate": "aureum-asta-disks:advancements.husbandry.taste_the_rainbow.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 50
+  },
+  "criteria": {
+    "all_effects": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "aureum-asta-disks:stimulation": {},
+          "aureum-asta-disks:comatose": {},
+          "aureum-asta-disks:batrachotoxin": {},
+          "aureum-asta-disks:torpor": {},
+          "aureum-asta-disks:numbness": {},
+          "aureum-asta-disks:vulnerability": {}
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "all_effects"
+    ]
+  ]
+}

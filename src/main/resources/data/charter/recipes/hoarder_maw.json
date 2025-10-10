@@ -1,0 +1,23 @@
+{
+  "type": "charter:uuid_locked_shaped",
+  "uuid": "e0f927bf-91fe-3015-97d8-41698d0cd92d",
+  "pattern": [
+    "GgG",
+    "gLg",
+    "GgG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "L": {
+      "item": "minecraft:lava_bucket"
+    },
+    "g": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "charter:hoarder_maw"
+  }
+}

@@ -1,0 +1,6 @@
+// 1.19.4	2025-09-26T18:58:02.5734884	Aureum Asta/Tags for minecraft:block
+70f50eca60dca00e7fcf354a960289e16d5d15b6 data\minecraft\tags\blocks\walls.json
+deb57cad8362f4e7bfe022894043d2cbddc5b81e data\minecraft\tags\blocks\mineable\pickaxe.json
+577c2b5f4207187cb2fc3ee4cc2bf6003678409b data\minecraft\tags\blocks\mineable\shovel.json
+c30030440099429492d4bea4af779f0a74c4b638 data\minecraft\tags\blocks\mineable\hoe.json
+3f4afb4cede5600057cedf7619075a08ab11505c data\minecraft\tags\blocks\mineable\axe.json

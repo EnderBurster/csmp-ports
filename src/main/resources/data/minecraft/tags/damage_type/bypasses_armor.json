@@ -1,0 +1,69 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "aureum-asta-disks:spewing",
+      "required": false
+    },
+    {
+      "id": "aureum-asta-disks:hellfork_heat",
+      "required": false
+    },
+    {
+      "id" : "aureum-asta-disks:backlash",
+      "required": false
+    },
+    {
+      "id" : "aureum-asta-disks:batrachotoxin",
+      "required": false
+    },
+    {
+      "id" : "aureum-asta-disks:stimulation",
+      "required": false
+    },
+    {
+      "id" : "aureum-asta-disks:disc",
+      "required": false
+    },
+    {
+      "id" : "aureum-asta-disks:accumulate",
+      "required": false
+    },
+    {
+      "id" : "aureum-asta-disks:amarite_budding",
+      "required": false
+    },
+    {
+      "id" : "aureum-asta-disks:soul_rip",
+      "required" : false
+    },
+    {
+      "id" : "aureum-asta-disks:cheirosiphon_overheat_bypass",
+      "required" : false
+    },
+    {
+      "id" : "aureum-asta-disks:elysium_armour_bypass",
+      "required" : false
+    },
+    {
+      "id": "aureum-asta-disks:cheirosiphon_blast",
+      "required": false
+    },
+    {
+      "id": "aureum-asta-disks:icicle",
+      "required": false
+    },
+    {
+      "id": "aureum-asta-disks:bleed",
+      "required": false
+    },
+    {
+      "id": "charter:lesser_divinity",
+      "required": false
+    },
+    {
+      "id": "charter:epitaph_ban",
+      "required": false
+    }
+  ]
+}

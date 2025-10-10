@@ -1,0 +1,19 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "aureum-asta-disks:block/partial_amarite_bud"
+  },
+  "display": {
+    "head": {
+      "translation": [ 0, 14, -5 ]
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "block": 1
+      },
+      "model": "aureum-asta-disks:item/partial_amarite_bud_block"
+    }
+  ]
+}

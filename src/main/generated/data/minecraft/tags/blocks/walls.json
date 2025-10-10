@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "aureum-asta-disks:kyratos_brick_wall",
+    "aureum-asta-disks:white_sandstone_wall",
+    "aureum-asta-disks:red_sandstone_wall",
+    "aureum-asta-disks:pink_sandstone_wall",
+    "aureum-asta-disks:yellow_sandstone_wall",
+    "aureum-asta-disks:blue_sandstone_wall",
+    "aureum-asta-disks:blue_brick_wall",
+    "aureum-asta-disks:dark_blue_brick_wall",
+    "aureum-asta-disks:purple_brick_wall",
+    "aureum-asta-disks:white_brick_wall",
+    "aureum-asta-disks:amethyst_brick_wall"
+  ]
+}

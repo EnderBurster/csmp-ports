@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "S": {
+      "item": "charter:lesser_divinity_shard"
+    }
+  },
+  "pattern": [
+    "SS ",
+    "SS ",
+    "  S"
+  ],
+  "result": {
+    "item": "charter:broken_lesser_divinity"
+  }
+}

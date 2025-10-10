@@ -1,0 +1,6 @@
+{
+  "parent": "aureum-asta-disks:item/big_weapon_in_hand",
+  "textures": {
+    "layer0": "aureum-asta-disks:item/blood_scythe"
+  }
+}

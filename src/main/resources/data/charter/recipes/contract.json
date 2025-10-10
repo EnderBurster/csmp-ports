@@ -1,0 +1,21 @@
+{
+  "type": "charter:uuid_locked_shaped",
+  "uuid": "e0f927bf-91fe-3015-97d8-41698d0cd92d",
+  "pattern": [
+    "GLG",
+    "LTL",
+    "GLG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "T": {
+      "item": "minecraft:soul_sand"
+    }
+  },
+  "result": { "item": "charter:contract" }
+}

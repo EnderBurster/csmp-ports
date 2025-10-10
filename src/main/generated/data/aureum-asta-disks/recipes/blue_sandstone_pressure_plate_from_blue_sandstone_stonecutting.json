@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "aureum-asta-disks:blue_sandstone"
+  },
+  "result": "aureum-asta-disks:blue_sandstone_pressure_plate"
+}

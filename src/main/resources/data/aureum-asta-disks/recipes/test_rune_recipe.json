@@ -1,0 +1,14 @@
+{
+  "type": "aureum-asta-disks:rune_recipe",
+  "rune": { "item": "minecraft:diamond" },
+  "pedestals": [
+    { "item": "minecraft:iron_ingot" },
+    { "item": "minecraft:iron_ingot" },
+    { "item": "minecraft:gold_ingot" },
+    { "item": "minecraft:gold_ingot" }
+  ],
+  "result": {
+    "item": "minecraft:nether_star",
+    "count": 1
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "aureum-asta-disks:dark_blue_brick"
+  },
+  "result": "aureum-asta-disks:dark_blue_brick_pressure_plate"
+}

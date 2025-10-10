@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "aureum-asta-disks:amarite_block"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "aureum-asta-disks:amarite_shard"
+  }
+}

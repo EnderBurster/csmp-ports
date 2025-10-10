@@ -1,0 +1,23 @@
+{
+  "type": "charter:uuid_locked_shaped",
+  "uuid": "e0f927bf-91fe-3015-97d8-41698d0cd92d",
+  "pattern": [
+    "SLS",
+    "LTL",
+    "SLS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stone"
+    },
+    "L": {
+      "item": "charter:pawn"
+    },
+    "T": {
+      "item": "charter:contract"
+    }
+  },
+  "result": {
+    "item": "charter:charter_stone"
+  }
+}

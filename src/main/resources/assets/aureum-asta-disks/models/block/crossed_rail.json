@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:block/rail_flat",
+	"textures": {
+		"rail": "aureum-asta-disks:block/crossed_rail"
+	}
+}

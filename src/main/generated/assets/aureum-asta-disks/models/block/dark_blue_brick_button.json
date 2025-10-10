@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "aureum-asta-disks:block/dark_blue_brick"
+  }
+}

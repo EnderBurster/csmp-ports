@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " P ",
+    "PSP",
+    " P "
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:packed_ice"
+    },
+    "S": {
+      "item": "aureum-asta-disks:stripminer"
+    }
+  },
+  "result": {
+    "item": "aureum-asta-disks:cold_digger"
+  }
+}

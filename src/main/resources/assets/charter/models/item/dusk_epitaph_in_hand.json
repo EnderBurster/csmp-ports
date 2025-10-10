@@ -1,0 +1,6 @@
+{
+  "parent": "charter:item/big_sword_in_hand",
+  "textures": {
+    "layer0": "charter:item/dusk_epitaph"
+  }
+}

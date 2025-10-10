@@ -1,0 +1,17 @@
+{
+  "base_block": "aureum-asta-disks:chiseled_amethyst",
+  "map_color": "purple",
+  "name": "chiseled_amethyst",
+  "only_if_present": "aureum-asta-disks",
+  "recipe": "stonecutting",
+  "texture": "all",
+  "types": [
+    "arch",
+    "octagonal_column",
+    "round_arch",
+    "roof",
+    "wall_column",
+    "wall_post",
+    "facade"
+  ]
+}

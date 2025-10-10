@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "aureum-asta-disks:white_sandstone"
+  },
+  "result": "aureum-asta-disks:white_sandstone_slab"
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "aureum-asta-disks:block/white_sandstone",
+    "side": "aureum-asta-disks:block/white_sandstone",
+    "top": "aureum-asta-disks:block/white_sandstone"
+  }
+}

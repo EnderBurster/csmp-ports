@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "aureum-asta-disks:block/merchant_simulacrum"
+    },
+    "facing=west": {
+      "model": "aureum-asta-disks:block/merchant_simulacrum",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "aureum-asta-disks:block/merchant_simulacrum",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "aureum-asta-disks:block/merchant_simulacrum",
+      "y": 270
+    }
+  }
+}

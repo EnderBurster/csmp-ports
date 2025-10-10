@@ -1,0 +1,466 @@
+{
+  "item.scythe.hit": {
+    "sounds": [
+      "aureum-asta-disks:item/scythe_hit"
+    ],
+    "subtitle": "aureum-asta-disks.subtitles.item.scythe.hit"
+  },
+  "item.scythe.spewing": {
+    "sounds": [
+      "aureum-asta-disks:item/scythe_spewing_1",
+      "aureum-asta-disks:item/scythe_spewing_2"
+    ],
+    "subtitle": "aureum-asta-disks.subtitles.item.scythe.spewing"
+  },
+  "entity.blood_scythe.hit": {
+    "sounds": [
+      "aureum-asta-disks:entity/blood_scythe_hit"
+    ],
+    "subtitle": "aureum-asta-disks.subtitles.entity.blood_scythe.hit"
+  },
+  "entity.poison_dart_frog.ambient": {
+    "sounds": [
+      "aureum-asta-disks:mob/poison_dart_frog/ambient1",
+      "aureum-asta-disks:mob/poison_dart_frog/ambient2",
+      "aureum-asta-disks:mob/poison_dart_frog/ambient3",
+      "aureum-asta-disks:mob/poison_dart_frog/ambient4"
+    ],
+    "subtitle": "aureum-asta-disks.subtitles.entity.poison_dart_frog.ambient"
+  },
+  "entity.poison_dart_frog.hurt": {
+    "sounds": [
+      "aureum-asta-disks:mob/poison_dart_frog/hurt1",
+      "aureum-asta-disks:mob/poison_dart_frog/hurt2",
+      "aureum-asta-disks:mob/poison_dart_frog/hurt3"
+    ],
+    "subtitle": "aureum-asta-disks.subtitles.entity.poison_dart_frog.hurt"
+  },
+  "entity.poison_dart_frog.death": {
+    "sounds": [
+      "aureum-asta-disks:mob/poison_dart_frog/death1",
+      "aureum-asta-disks:mob/poison_dart_frog/death2"
+    ],
+    "subtitle": "aureum-asta-disks.subtitles.entity.poison_dart_frog.death"
+  },
+  "entity.poison_dart.hit": {
+    "sounds": [
+      "aureum-asta-disks:entity/poison_dart/hit1"
+    ],
+    "subtitle": "aureum-asta-disks.subtitles.entity.poison_dart.hit"
+  },
+  "item.poison_dart_frog_bowl.fill": {
+    "sounds": [
+      "aureum-asta-disks:item/poison_dart_frog_bowl/fill1"
+    ],
+    "subtitle": "aureum-asta-disks.subtitles.item.poison_dart_frog_bowl.fill"
+  },
+  "item.poison_dart_frog_bowl.empty": {
+    "sounds": [
+      "aureum-asta-disks:item/poison_dart_frog_bowl/empty1"
+    ],
+    "subtitle": "aureum-asta-disks.subtitles.item.poison_dart_frog_bowl.empty"
+  },
+  "item.poison_dart_frog_bowl.lick": {
+    "sounds": [
+      "aureum-asta-disks:item/poison_dart_frog_bowl/lick1"
+    ],
+    "subtitle": "aureum-asta-disks.subtitles.item.poison_dart_frog_bowl.lick"
+  },
+  "item.poison_dart.coat": {
+    "sounds": [
+      "aureum-asta-disks:item/poison_dart/coat1"
+    ],
+    "subtitle": "aureum-asta-disks.subtitles.item.poison_dart.coat"
+  },
+  "item.poison_dart.throw": {
+    "sounds": [
+      "aureum-asta-disks:item/poison_dart/throw1"
+    ],
+    "subtitle": "aureum-asta-disks.subtitles.item.poison_dart.throw"
+  },
+
+  "item.amarite.disc_damage": {
+    "sounds": [
+      "aureum-asta-disks:disc_damage"
+    ],
+    "subtitle": "subtitles.item.aureum-asta-disks.disc_damage"
+  },
+  "item.amarite.disc_hit": {
+    "sounds": [
+      "aureum-asta-disks:disc_hit1",
+      "aureum-asta-disks:disc_hit2"
+    ],
+    "subtitle": "subtitles.item.aureum-asta-disks.disc_hit"
+  },
+  "item.amarite.disc_throw": {
+    "sounds": [
+      "aureum-asta-disks:disc_throw1",
+      "aureum-asta-disks:disc_throw2",
+      "aureum-asta-disks:disc_throw3",
+      "aureum-asta-disks:disc_throw4"
+    ],
+    "subtitle": "subtitles.item.aureum-asta-disks.disc_throw"
+  },
+  "item.amarite.disc_pickup1": {
+    "sounds": [
+      "aureum-asta-disks:disc_pickup1"
+    ],
+    "subtitle": "subtitles.item.aureum-asta-disks.disc_pickup"
+  },
+  "item.amarite.disc_pickup2": {
+    "sounds": [
+      "aureum-asta-disks:disc_pickup2"
+    ],
+    "subtitle": "subtitles.item.aureum-asta-disks.disc_pickup"
+  },
+  "item.amarite.disc_pickup3": {
+    "sounds": [
+      "aureum-asta-disks:disc_pickup3"
+    ],
+    "subtitle": "subtitles.item.aureum-asta-disks.disc_pickup"
+  },
+  "item.amarite.disc_rebound": {
+    "sounds": [
+      "aureum-asta-disks:disc_rebound"
+    ],
+    "subtitle": "subtitles.item.aureum-asta-disks.disc_rebound"
+  },
+  "item.amarite.mirror_extract": {
+    "sounds": [
+      "aureum-asta-disks:mirror_extract"
+    ],
+    "subtitle": "subtitles.item.aureum-asta-disks.mirror_extract"
+  },
+  "item.amarite.mirror_use": {
+    "sounds": [
+      "aureum-asta-disks:mirror_use"
+    ],
+    "subtitle": "subtitles.item.aureum-asta-disks.mirror_use"
+  },
+  "item.amarite.sword_charge": {
+    "sounds": [
+      "aureum-asta-disks:sword_charge"
+    ],
+    "subtitle": "subtitles.item.aureum-asta-disks.sword_charge"
+  },
+  "item.amarite.sword_block": {
+    "sounds": [
+      "aureum-asta-disks:sword_block"
+    ],
+    "subtitle": "subtitles.item.aureum-asta-disks.sword_block"
+  },
+  "item.amarite.sword_dash": {
+    "sounds": [
+      "aureum-asta-disks:sword_dash1",
+      "aureum-asta-disks:sword_dash2",
+      "aureum-asta-disks:sword_dash3",
+      "aureum-asta-disks:sword_dash4"
+    ],
+    "subtitle": "subtitles.item.aureum-asta-disks.sword_dash"
+  },
+  "item.amarite.sword_accumulate": {
+    "sounds": [
+      "aureum-asta-disks:sword_accumulate"
+    ],
+    "subtitle": "subtitles.item.aureum-asta-disks.sword_accumulate"
+  },
+  "item.amarite.mask_offset": {
+    "sounds": [
+      "random/click"
+    ],
+    "subtitle": "subtitles.item.aureum-asta-disks.mask_offset"
+  },
+  "item.amarite.infinite_toggle": {
+    "sounds": [
+      "random/click"
+    ],
+    "subtitle": "subtitles.item.aureum-asta-disks.infinite_toggle"
+  },
+  "block.amarite.spark_activate": {
+    "sounds": [
+      "block/beacon/activate"
+    ],
+    "subtitle": "subtitles.block.aureum-asta-disks.spark_activate"
+  },
+  "block.amarite.spark_ambient": {
+    "sounds": [
+      {
+        "attenuation_distance": 7,
+        "name": "block/beacon/ambient",
+        "volume": 0.9
+      }
+    ],
+    "subtitle": "subtitles.block.aureum-asta-disks.spark_ambient"
+  },
+  "block.amarite.spark_deactivate": {
+    "sounds": [
+      "block/beacon/deactivate"
+    ],
+    "subtitle": "subtitles.block.aureum-asta-disks.spark_deactivate"
+  },
+  "block.amarite.amarite_forms": {
+    "sounds": [
+      "item/bucket/empty_lava1",
+      "item/bucket/empty_lava2",
+      "item/bucket/empty_lava3"
+    ],
+    "subtitle": "subtitles.block.aureum-asta-disks.amarite_forms"
+  },
+  "block.amarite.amarite_decays": {
+    "sounds": [
+      "random/fizz"
+    ],
+    "subtitle": "subtitles.block.aureum-asta-disks.amarite_decays"
+  },
+  "amarite.pacificus": {
+    "sounds": [
+      "aureum-asta-disks:pacificus"
+    ],
+    "subtitle": "subtitles.aureum-asta-disks.pacificus"
+  },
+
+  "entity.pipe_bomb.tick": {
+    "sounds": [
+      "aureum-asta-disks:pipe_bomb_tick"
+    ],
+    "subtitle": "subtitles.aureum-asta-disks.entity.pipe_bomb.tick"
+  },
+
+
+  "entity.raven.caw": {
+    "sounds": [
+      "aureum-asta-disks:raven/raven_1",
+      "aureum-asta-disks:raven/raven_2",
+      "aureum-asta-disks:raven/raven_3"
+    ],
+    "subtitle": "mason.subtitles.entity.raven.caw"
+  },
+  "entity.soulmould.ambient": {
+    "sounds": [
+      "aureum-asta-disks:soulmould/soulmould_ambient_1",
+      "aureum-asta-disks:soulmould/soulmould_ambient_2"
+    ],
+    "subtitle": "mason.subtitles.entity.soulmould.ambient"
+  },
+  "entity.soulmould.attack": {
+    "sounds": [
+      "aureum-asta-disks:soulmould/soulmould_attack_1",
+      "aureum-asta-disks:soulmould/soulmould_attack_2",
+      "aureum-asta-disks:soulmould/soulmould_attack_3"
+    ],
+    "subtitle": "mason.subtitles.entity.soulmould.attack"
+  },
+  "entity.soulmould.hurt": {
+    "sounds": [
+      "aureum-asta-disks:soulmould/soulmould_damage_1"
+    ],
+    "subtitle": "mason.subtitles.entity.soulmould.hurt"
+  },
+  "entity.soulmould.death": {
+    "sounds": [
+      "aureum-asta-disks:soulmould/soulmould_death_1"
+    ],
+    "subtitle": "mason.subtitles.entity.soulmould.death"
+  },
+  "item.mace.smash_air": {
+    "sounds": [
+      "aureum-asta-disks:item/mace/smash_air1",
+      "aureum-asta-disks:item/mace/smash_air2",
+      "aureum-asta-disks:item/mace/smash_air3"
+    ],
+    "subtitle": "subtitles.aureum-asta-disks.item.mace.smash_air"
+  },
+  "item.mace.smash_ground": {
+    "sounds": [
+      "aureum-asta-disks:item/mace/smash_ground1",
+      "aureum-asta-disks:item/mace/smash_ground2",
+      "aureum-asta-disks:item/mace/smash_ground3",
+      "aureum-asta-disks:item/mace/smash_ground4"
+    ],
+    "subtitle": "subtitles.aureum-asta-disks.item.mace.smash_ground"
+  },
+  "item.mace.smash_ground_heavy": {
+    "sounds": [
+      "aureum-asta-disks:item/mace/smash_ground_heavy"
+    ],
+    "subtitle": "subtitles.aureum-asta-disks.item.mace.smash_ground"
+  },
+  "entity.wind_charge.throw": {
+    "sounds": [
+      "random/bow"
+    ],
+    "subtitle": "subtitles.aureum-asta-disks.entity.wind_charge.throw"
+  },
+  "entity.wind_charge.wind_burst": {
+    "sounds": [
+      {
+        "attenuation_distance": 8,
+        "name": "aureum-asta-disks:entity/wind_charge/wind_burst1",
+        "pitch": 1.25
+      },
+      {
+        "attenuation_distance": 8,
+        "name": "aureum-asta-disks:entity/wind_charge/wind_burst2",
+        "pitch": 1.25
+      },
+      {
+        "attenuation_distance": 8,
+        "name": "aureum-asta-disks:entity/wind_charge/wind_burst3",
+        "pitch": 1.25
+      }
+    ],
+    "subtitle": "subtitles.aureum-asta-disks.entity.wind_charge.wind_burst"
+  },
+  "entity.generic.erupt": {
+    "sounds": [
+      "aureum-asta-disks:entity/erupt"
+    ],
+    "subtitle": "subtitles.aureum-asta-disks.entity.generic.erupt"
+  },
+  "entity.generic.ping": {
+    "sounds": [
+      "random/orb"
+    ],
+    "subtitle": "subtitles.aureum-asta-disks.entity.generic.ping"
+  },
+  "entity.generic.zap": {
+    "sounds": [
+      "aureum-asta-disks:entity/zap"
+    ],
+    "subtitle": "subtitles.aureum-asta-disks.entity.generic.zap"
+  },
+  "item.generic.whoosh": {
+    "sounds": [
+      "aureum-asta-disks:mob/breeze/shoot"
+    ],
+    "subtitle": "subtitles.aureum-asta-disks.item.generic.whoosh"
+  },
+  "entity.generic.spark": {
+    "sounds": [
+      "aureum-asta-disks:entity/spark"
+    ],
+    "subtitle": "subtitles.aureum-asta-disks.entity.generic.spark"
+  },
+
+
+  "grimoire_fire": {
+    "sounds": [
+      "aureum-asta-disks:grimoire/grimoire_fire_1",
+      "aureum-asta-disks:grimoire/grimoire_fire_2",
+      "aureum-asta-disks:grimoire/grimoire_fire_3"
+    ],
+    "subtitle": "subtitles.aureum-asta-disks.grimoire.fire"
+  },
+  "grimoire_page": {
+    "sounds": [
+      "aureum-asta-disks:grimoire/grimoire_page_1",
+      "aureum-asta-disks:grimoire/grimoire_page_2",
+      "aureum-asta-disks:grimoire/grimoire_page_3"
+    ],
+    "subtitle": "subtitles.aureum-asta-disks.grimoire.page"
+  },
+  "grimoire_alt_1": {
+    "sounds": [
+      "aureum-asta-disks:grimoire/grimoire_alt_1"
+    ],
+    "subtitle": "subtitles.aureum-asta-disks.grimoire.alt"
+  },
+  "grimoire_alt_2": {
+    "sounds": [
+      "aureum-asta-disks:grimoire/grimoire_alt_2"
+    ],
+    "subtitle": "subtitles.aureum-asta-disks.grimoire.alt"
+  },
+  "grimoire_alt_3": {
+    "sounds": [
+      "aureum-asta-disks:grimoire/grimoire_alt_3"
+    ],
+    "subtitle": "subtitles.aureum-asta-disks.grimoire.alt"
+  },
+  "grimoire_impact": {
+    "sounds": [
+      {
+        "name": "aureum-asta-disks:grimoire/grimoire_impact_1",
+        "volume": 0.6
+      },
+      {
+        "name": "aureum-asta-disks:grimoire/grimoire_impact_2",
+        "volume": 0.6
+      },
+      {
+        "name": "aureum-asta-disks:grimoire/grimoire_impact_3",
+        "volume": 0.6
+      },
+      {
+        "name": "aureum-asta-disks:grimoire/grimoire_impact_4",
+        "volume": 0.6
+      },
+      {
+        "name": "aureum-asta-disks:grimoire/grimoire_impact_5",
+        "volume": 0.6
+      }
+    ],
+    "subtitle": "subtitles.aureum-asta-disks.grimoire.impact"
+  },
+  "barrier_activate": {
+    "sounds": [
+      {
+        "name": "aureum-asta-disks:grimoire/barrier_opening"
+      }
+    ],
+    "subtitle": "subtitles.aureum-asta-disks.grimoire.barrier"
+  },
+  "barrier_vocals": {
+    "sounds": [
+      {
+        "name": "aureum-asta-disks:grimoire/barrier_vocals"
+      }
+    ],
+    "subtitle": "subtitles.aureum-asta-disks.grimoire.vocal"
+  },
+  "barrier_vocals_1": {
+    "sounds": [
+      {
+        "name": "aureum-asta-disks:grimoire/barrier_vocals_1"
+      }
+    ],
+    "subtitle": "subtitles.aureum-asta-disks.grimoire.vocal"
+  },
+  "barrier_vocals_2": {
+    "sounds": [
+      {
+        "name": "aureum-asta-disks:grimoire/barrier_vocals_2"
+      }
+    ],
+    "subtitle": "subtitles.aureum-asta-disks.grimoire.vocal"
+  },
+  "barrier_vocals_3": {
+    "sounds": [
+      {
+        "name": "aureum-asta-disks:grimoire/barrier_vocals_3"
+      }
+    ],
+    "subtitle": "subtitles.aureum-asta-disks.grimoire.vocal"
+  },
+  "grimoire_whispers": {
+    "sounds": [
+      "aureum-asta-disks:grimoire/grimoire_whisper_1",
+      "aureum-asta-disks:grimoire/grimoire_whisper_2",
+      "aureum-asta-disks:grimoire/grimoire_whisper_3",
+      "aureum-asta-disks:grimoire/grimoire_whisper_4",
+      "aureum-asta-disks:grimoire/grimoire_whisper_5",
+      "aureum-asta-disks:grimoire/grimoire_whisper_6",
+      "aureum-asta-disks:grimoire/grimoire_whisper_7",
+      "aureum-asta-disks:grimoire/grimoire_whisper_8",
+      "aureum-asta-disks:grimoire/grimoire_whisper_9",
+      "aureum-asta-disks:grimoire/grimoire_whisper_10",
+      "aureum-asta-disks:grimoire/grimoire_whisper_11",
+      "aureum-asta-disks:grimoire/grimoire_whisper_12",
+      "aureum-asta-disks:grimoire/grimoire_whisper_13",
+      "aureum-asta-disks:grimoire/grimoire_whisper_14",
+      "aureum-asta-disks:grimoire/grimoire_whisper_15",
+      "aureum-asta-disks:grimoire/grimoire_whisper_16"
+    ],
+    "subtitle": "subtitles.aureum-asta-disks.grimoire.whispers"
+  }
+}

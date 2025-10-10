@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+	  {
+		  "id": "charter:lesser_divinity",
+		  "required": false
+	  },
+	  {
+		  "id": "charter:broken_lesser_divinity",
+		  "required": false
+	  }
+  ]
+}

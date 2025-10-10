@@ -1,0 +1,6 @@
+{
+  "parent": "aureum-asta-disks:item/green_bundle",
+  "textures": {
+    "layer0": "aureum-asta-disks:item/green_bundle_filled"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "filled=false": {
+      "model": "aureum-asta-disks:block/remote_detonator"
+    },
+    "filled=true": {
+      "model": "aureum-asta-disks:block/remote_detonator_filled"
+    }
+  }
+}

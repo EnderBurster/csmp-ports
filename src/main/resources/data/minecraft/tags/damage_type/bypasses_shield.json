@@ -1,0 +1,34 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "aureum-asta-disks:disc",
+      "required": false
+    },
+    {
+      "id": "aureum-asta-disks:accumulate",
+      "required": false
+    },
+    {
+      "id": "aureum-asta-disks:amarite_budding",
+      "required": false
+    },
+    {
+      "id": "aureum-asta-disks:dash",
+      "required": false
+    },
+    {
+      "id": "aureum-asta-disks:soul_rip",
+      "required": false
+    },
+    {
+      "id": "charter:lesser_divinity",
+      "required": false
+    },
+    {
+      "id": "charter:epitaph_ban",
+      "required": false
+    }
+
+  ]
+}

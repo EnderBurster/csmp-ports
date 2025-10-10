@@ -1,0 +1,22 @@
+{
+  "item.charter.contract": "Contract",
+  "item.charter.merchant_effigy": "Merchant Effigy",
+  "block.charter.pawn": "Pawn",
+  "block.charter.charter_stone": "Charter Stone",
+  "block.charter.suspicious_dirt": "Suspicious Dirt",
+  "block.charter.suspicious_sand": "Suspicious Sand",
+  "item.charter.arm": "Arm",
+  "item.charter.hoarder_maw": "Hoarder Maw",
+  "item.charter.bastion_gauntlet": "Bastion Gauntlet",
+  "item.charter.advance_gauntlet": "Advance Gauntlet",
+  "item.charter.dusk_epitaph": "Dusk's Epitaph",
+  "item.charter.lesser_divinity": "Lesser Divinity",
+  "death.attack.lesser_divinity": "%1$s had their existence forfeit",
+  "death.attack.lesser_divinity.item": "%1$s had their existence forfeit",
+  "death.attack.lesser_divinity.player": "%1$s had their existence forfeit",
+  "death.attack.epitaph_ban": "%1$s had their existence repurposed",
+  "death.attack.epitaph_ban.item": "%1$s had their existence repurposed",
+  "death.attack.epitaph_ban.player": "%1$s had their existence repurposed",
+  "item.charter.broken_lesser_divinity": "Broken Lesser Divinity",
+  "item.charter.lesser_divinity_shard": "Lesser Divinity Shard"
+}

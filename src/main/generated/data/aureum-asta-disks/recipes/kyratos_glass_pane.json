@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "aureum-asta-disks:kyratos_glass"
+    }
+  },
+  "pattern": [
+    "   ",
+    "GGG",
+    "GGG"
+  ],
+  "result": {
+    "item": "aureum-asta-disks:kyratos_glass_pane"
+  },
+  "show_notification": true
+}

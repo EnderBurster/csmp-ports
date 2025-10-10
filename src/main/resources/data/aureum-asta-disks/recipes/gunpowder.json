@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "aureum-asta-disks:gunpowder_block"
+    }
+  ],
+  "result": {
+    "item": "minecraft:gunpowder",
+    "count": 9
+  }
+}
