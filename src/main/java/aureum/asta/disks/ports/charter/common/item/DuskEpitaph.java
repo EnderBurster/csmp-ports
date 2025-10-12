@@ -3,6 +3,7 @@ package aureum.asta.disks.ports.charter.common.item;
 import aureum.asta.disks.AureumAstaDisks;
 import aureum.asta.disks.interfaces.BackslotExtraLarge;
 import aureum.asta.disks.interfaces.Dualhanded;
+import aureum.asta.disks.ports.charter.Charter;
 import aureum.asta.disks.ports.charter.common.component.CharterComponents;
 import aureum.asta.disks.ports.charter.common.damage.CharterDamageSources;
 import aureum.asta.disks.ports.charter.common.entity.EpitaphChainsEntity;
@@ -33,6 +34,7 @@ import net.minecraft.entity.projectile.ProjectileUtil;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.TypedActionResult;
@@ -65,6 +67,24 @@ public class DuskEpitaph extends SwordItem implements Dualhanded, BackslotExtraL
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         Entity entity = raycastEntity(world, user, 5.0f);
 
+        /*if (entity instanceof LivingEntity living) {
+            /*if(world.isClient)
+            {
+                ClientEpitaph.playTestAnimation(user);
+            }
+
+            if(!world.isClient)
+            {
+                Charter.sendAnimationToTracking((ServerPlayerEntity) user);
+            }
+
+            user.getComponent(CharterComponents.PLAYER_COMPONENT).setEpitaphBanning(true);
+
+            EpitaphShockwaveEntity shockwave = new EpitaphShockwaveEntity(living.getWorld());
+            shockwave.requestTeleport(living.getX(), living.getY(), living.getZ());
+            living.getWorld().spawnEntity(shockwave);
+        }*/
+
         if ((entity instanceof EpitaphChainsEntity) || (entity instanceof PlayerEntity player && player.getVehicle() instanceof EpitaphChainsEntity)) {
             EpitaphChainsEntity chains;
             PlayerEntity targetPlayer;
@@ -80,10 +100,16 @@ public class DuskEpitaph extends SwordItem implements Dualhanded, BackslotExtraL
                 chains = (EpitaphChainsEntity) entity.getVehicle();
             }
 
-            if(world.isClient)
+            /*if(world.isClient)
             {
                 ClientEpitaph.playTestAnimation(user);
+            }*/
+
+            if(!world.isClient)
+            {
+                Charter.sendAnimationToTracking((ServerPlayerEntity) user);
             }
+
             user.getComponent(CharterComponents.PLAYER_COMPONENT).setEpitaphBanning(true);
 
             EpitaphShockwaveEntity shockwave = new EpitaphShockwaveEntity(targetPlayer.getWorld());

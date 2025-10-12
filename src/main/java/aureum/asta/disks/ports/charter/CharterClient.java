@@ -1,44 +1,31 @@
 package aureum.asta.disks.ports.charter;
 
-import aureum.asta.disks.blocks.client.PedestalBlockRenderer;
-import aureum.asta.disks.init.AstaBlockEntities;
-import aureum.asta.disks.mixin.ports.elysium.PistonMovingBlockEntityMixin;
+import aureum.asta.disks.AureumAstaDisks;
 import aureum.asta.disks.ports.charter.client.model.*;
 import aureum.asta.disks.ports.charter.client.render.*;
-import aureum.asta.disks.ports.charter.common.component.CharterComponents;
-import aureum.asta.disks.ports.charter.common.component.CharterWorldComponent;
-import aureum.asta.disks.ports.charter.common.entity.EpitaphShockwaveEntity;
 import aureum.asta.disks.ports.charter.common.init.CharterBlocks;
 import aureum.asta.disks.ports.charter.common.init.CharterEntities;
 import aureum.asta.disks.ports.charter.common.init.CharterItems;
 import aureum.asta.disks.ports.charter.common.init.CharterParticles;
 import aureum.asta.disks.ports.charter.common.item.ContractItem;
+import aureum.asta.disks.ports.charter.common.item.DuskEpitaph;
 import dev.kosmx.playerAnim.api.firstPerson.FirstPersonConfiguration;
 import dev.kosmx.playerAnim.api.firstPerson.FirstPersonMode;
 import dev.kosmx.playerAnim.api.layered.IAnimation;
 import dev.kosmx.playerAnim.api.layered.KeyframeAnimationPlayer;
 import dev.kosmx.playerAnim.api.layered.ModifierLayer;
 import dev.kosmx.playerAnim.api.layered.modifier.AbstractFadeModifier;
-import dev.kosmx.playerAnim.api.layered.modifier.MirrorModifier;
-import dev.kosmx.playerAnim.api.layered.modifier.SpeedModifier;
-import dev.kosmx.playerAnim.core.util.Ease;
 import dev.kosmx.playerAnim.minecraftApi.PlayerAnimationAccess;
 import dev.kosmx.playerAnim.minecraftApi.PlayerAnimationFactory;
 import dev.kosmx.playerAnim.minecraftApi.PlayerAnimationRegistry;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
-import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
-import net.fabricmc.fabric.api.client.model.ModelLoadingRegistry;
 import net.fabricmc.fabric.api.client.model.loading.v1.ModelLoadingPlugin;
+import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.client.rendering.v1.BuiltinItemRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.CarrotsBlock;
-import net.minecraft.block.entity.BeaconBlockEntity;
-import net.minecraft.block.entity.ChestBlockEntity;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.client.network.ClientPlayerEntity;
@@ -46,11 +33,12 @@ import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 import net.minecraft.client.render.entity.model.EntityModelLayer;
 import net.minecraft.client.util.ModelIdentifier;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.registry.Registries;
 import net.minecraft.resource.ResourceType;
 import net.minecraft.util.Identifier;
 
-import java.util.Random;
+import java.util.UUID;
 
 public class CharterClient implements ClientModInitializer {
    public static final EntityModelLayer BLOODFLY_MODEL_LAYER = new EntityModelLayer(Charter.id("bloodfly"), "main");
@@ -63,6 +51,7 @@ public class CharterClient implements ClientModInitializer {
 
    public void onInitializeClient() {
       CharterParticles.registerFactories();
+
       ModelPredicateProviderRegistry.register(
          CharterItems.CONTRACT, Charter.id("signed"), (stack, world, entity, i) -> ContractItem.isViable(stack) ? 1.0F : 0.0F
       );
@@ -97,7 +86,24 @@ public class CharterClient implements ClientModInitializer {
       initGauntlets();
       initEpitaph();
 
+      initPackets();
+
       initTestAnimation();
+   }
+
+   private void initPackets()
+   {
+      ClientPlayNetworking.registerGlobalReceiver(CharterPackets.PLAY_ANIMATION, (client, handler, buf, responseSender) -> {
+         UUID playerId = buf.readUuid();
+
+         client.execute(() -> {
+            PlayerEntity player = client.world.getPlayerByUuid(playerId);
+            AureumAstaDisks.LOGGER.info("Test");
+            if (player instanceof ClientPlayerEntity) {
+               DuskEpitaph.ClientEpitaph.playTestAnimation(player);
+            }
+         });
+      });
    }
 
    private static void initGauntlets() {

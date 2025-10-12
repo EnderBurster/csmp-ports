@@ -68,49 +68,39 @@ public class EpitaphShockwaveEntity extends Entity {
             int count = 400;
             float goldenAngle = (float) (Math.PI * (3 - Math.sqrt(5))); // ~2.39996
 
-            for (int i = 0; i < count; i++)
+            if(this.world.isClient)
             {
-                double u = Math.random();
-                double v = Math.random();
+                for (int i = 0; i < count; i++) {
+                    double u = Math.random();
+                    double v = Math.random();
 
-                double theta = 2 * Math.PI * u;
-                double phi = Math.acos(2 * v - 1);
-                double sinPhi = Math.sin(phi);
+                    double theta = 2 * Math.PI * u;
+                    double phi = Math.acos(2 * v - 1);
+                    double sinPhi = Math.sin(phi);
 
-                double xDir = sinPhi * Math.cos(theta);
-                double yDir = Math.cos(phi);
-                double zDir = sinPhi * Math.sin(theta);
+                    double xDir = sinPhi * Math.cos(theta);
+                    double yDir = Math.cos(phi);
+                    double zDir = sinPhi * Math.sin(theta);
 
-                Vector3f direction = new Vector3f((float) xDir, (float) yDir, (float) zDir);
-                Vector3f motion = direction.mul(1);
+                    Vector3f direction = new Vector3f((float) xDir, (float) yDir, (float) zDir);
+                    Vector3f motion = direction.mul(1);
 
-
-               /*float y = 1 - (i / (float)(count - 1)) * 2;
-               float radius = (float) Math.sqrt(1 - y * y);
-
-               float theta = goldenAngle * i;
-
-               float x = (float) (Math.cos(theta) * radius);
-               float z = (float) (Math.sin(theta) * radius);
-
-               Vector3f direction = new Vector3f(x, y, z);
-               Vector3f motion = direction.mul(1);*/
-
-                ParticleBuilders.create(CharterParticles.EPITAPH_PARTICLE)
-                        .setLifetime(120)
-                        .overrideAnimator(SimpleParticleEffect.Animator.WITH_AGE)
-                        .setAlphaEasing(Easing.LINEAR)
-                        .setColorEasing(Easing.ELASTIC_OUT)
-                        .setSpinEasing(Easing.SINE_IN)
-                        .setScaleEasing(Easing.SINE_IN_OUT)
-                        .setAlpha(1f, 0.0f)
-                        .setSpinOffset(this.world.random.nextFloat())
-                        .setScale(0.6f, 1.0f)
-                        .setGravity(0)
-                        .setForcedMotion(motion, motion)
-                        .setMotionCoefficient(0.0f)
-                        .enableNoClip()
-                        .spawn(this.world, this.getX(), this.getY(), this.getZ());
+                    ParticleBuilders.create(CharterParticles.EPITAPH_PARTICLE)
+                            .setLifetime(120)
+                            .overrideAnimator(SimpleParticleEffect.Animator.WITH_AGE)
+                            .setAlphaEasing(Easing.LINEAR)
+                            .setColorEasing(Easing.ELASTIC_OUT)
+                            .setSpinEasing(Easing.SINE_IN)
+                            .setScaleEasing(Easing.SINE_IN_OUT)
+                            .setAlpha(1f, 0.0f)
+                            .setSpinOffset(this.world.random.nextFloat())
+                            .setScale(0.6f, 1.0f)
+                            .setGravity(0)
+                            .setForcedMotion(motion, motion)
+                            .setMotionCoefficient(0.0f)
+                            .enableNoClip()
+                            .spawn(this.world, this.getX(), this.getY(), this.getZ());
+                }
             }
         }
         else if(this.age >= MAX_AGE)

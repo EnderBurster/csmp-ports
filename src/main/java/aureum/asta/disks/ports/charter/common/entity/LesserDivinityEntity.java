@@ -1,8 +1,6 @@
 package aureum.asta.disks.ports.charter.common.entity;
 
-import aureum.asta.disks.AureumAstaDisks;
 import aureum.asta.disks.api.lodestone.handlers.ScreenshakeHandler;
-import aureum.asta.disks.api.lodestone.setup.LodestoneParticles;
 import aureum.asta.disks.api.lodestone.systems.rendering.particle.Easing;
 import aureum.asta.disks.api.lodestone.systems.rendering.particle.ParticleBuilders;
 import aureum.asta.disks.api.lodestone.systems.rendering.particle.SimpleParticleEffect;
@@ -17,12 +15,10 @@ import aureum.asta.disks.ports.charter.common.interfaces.LockedTransport;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.block.entity.SuspiciousSandBlockEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.listener.ClientPlayPacketListener;
 import net.minecraft.network.packet.Packet;
@@ -152,22 +148,25 @@ public class LesserDivinityEntity extends Entity implements LockedTransport {
             {
                 target.damage(target.getDamageSources().create(CharterDamageSources.LESSER_DIVINITY), 200f);
             }
-            for (int i = 0; i < 6; i++)
+
+            if(this.world.isClient)
             {
-                ParticleBuilders.create(LodestoneParticles.WISP_PARTICLE )
-                        .setLifetime(10 + this.random.nextInt(5))
-                        .overrideAnimator(SimpleParticleEffect.Animator.WITH_AGE)
-                        .setAlphaEasing(Easing.LINEAR)
-                        .setColorCoefficient(2.0f)
-                        .setColorEasing(Easing.ELASTIC_OUT)
-                        .setSpinEasing(Easing.SINE_IN)
-                        .setScaleEasing(Easing.SINE_IN_OUT)
-                        .setColor(0.98f, 0.973f, 0.698f)
-                        .setAlpha(0.1f, 0.0f)
-                        .setSpinOffset(this.random.nextFloat())
-                        .setScale(4f + this.random.nextFloat()*3f, 2f + this.random.nextFloat(), 4f + this.random.nextFloat()*3)
-                        .randomOffset(5.0f, 5.0f)
-                        .spawn(this.world, this.getX(), this.getY() + 1f, this.getZ());
+                for (int i = 0; i < 6; i++) {
+                    ParticleBuilders.create(CharterParticles.DIVINITY_SMOKE)
+                            .setLifetime(10 + this.random.nextInt(5))
+                            .overrideAnimator(SimpleParticleEffect.Animator.WITH_AGE)
+                            .setAlphaEasing(Easing.LINEAR)
+                            .setColorCoefficient(2.0f)
+                            .setColorEasing(Easing.ELASTIC_OUT)
+                            .setSpinEasing(Easing.SINE_IN)
+                            .setScaleEasing(Easing.SINE_IN_OUT)
+                            .setColor(0.98f, 0.973f, 0.698f)
+                            .setAlpha(0.1f, 0.0f)
+                            .setSpinOffset(this.random.nextFloat())
+                            .setScale(4f + this.random.nextFloat() * 3f, 2f + this.random.nextFloat(), 4f + this.random.nextFloat() * 3)
+                            .randomOffset(5.0f, 5.0f)
+                            .spawn(this.world, this.getX(), this.getY() + 1f, this.getZ());
+                }
             }
 
             if(!this.lastUse) return;

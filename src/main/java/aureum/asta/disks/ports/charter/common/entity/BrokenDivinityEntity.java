@@ -6,15 +6,12 @@ import aureum.asta.disks.api.lodestone.systems.rendering.particle.ParticleBuilde
 import aureum.asta.disks.api.lodestone.systems.rendering.particle.SimpleParticleEffect;
 import aureum.asta.disks.api.lodestone.systems.screenshake.PositionedScreenshakeInstance;
 import aureum.asta.disks.ports.charter.common.component.CharterComponents;
-import aureum.asta.disks.ports.charter.common.damage.CharterDamageSources;
 import aureum.asta.disks.ports.charter.common.init.CharterEntities;
 import aureum.asta.disks.ports.charter.common.init.CharterParticles;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.MinecraftServer;
-import net.minecraft.util.math.Box;
 import net.minecraft.world.World;
 
 public class BrokenDivinityEntity extends LesserDivinityEntity{
@@ -55,22 +52,24 @@ public class BrokenDivinityEntity extends LesserDivinityEntity{
 
         if(this.age >= 25 && this.age <= 100)
         {
-            for (int i = 0; i < 6; i++)
+            if(this.world.isClient)
             {
-                ParticleBuilders.create(CharterParticles.DIVINITY_SMOKE)
-                        .setLifetime(10 + this.random.nextInt(5))
-                        .overrideAnimator(SimpleParticleEffect.Animator.WITH_AGE)
-                        .setAlphaEasing(Easing.LINEAR)
-                        .setColorCoefficient(2.0f)
-                        .setColorEasing(Easing.ELASTIC_OUT)
-                        .setSpinEasing(Easing.SINE_IN)
-                        .setScaleEasing(Easing.SINE_IN_OUT)
-                        .setColor(0.98f, 0.973f, 0.698f)
-                        .setAlpha(0.1f, 0.0f)
-                        .setSpinOffset(this.random.nextFloat())
-                        .setScale(5f + this.random.nextFloat()*3f, 2f + this.random.nextFloat(), 5f + this.random.nextFloat()*3)
-                        .randomOffset(5.0f, 5.0f)
-                        .spawn(this.world, this.getX(), this.getY() + 1f, this.getZ());
+                for (int i = 0; i < 6; i++) {
+                    ParticleBuilders.create(CharterParticles.DIVINITY_SMOKE)
+                            .setLifetime(10 + this.random.nextInt(5))
+                            .overrideAnimator(SimpleParticleEffect.Animator.WITH_AGE)
+                            .setAlphaEasing(Easing.LINEAR)
+                            .setColorCoefficient(2.0f)
+                            .setColorEasing(Easing.ELASTIC_OUT)
+                            .setSpinEasing(Easing.SINE_IN)
+                            .setScaleEasing(Easing.SINE_IN_OUT)
+                            .setColor(0.98f, 0.973f, 0.698f)
+                            .setAlpha(0.1f, 0.0f)
+                            .setSpinOffset(this.random.nextFloat())
+                            .setScale(5f + this.random.nextFloat() * 3f, 2f + this.random.nextFloat(), 5f + this.random.nextFloat() * 3)
+                            .randomOffset(5.0f, 5.0f)
+                            .spawn(this.world, this.getX(), this.getY() + 1f, this.getZ());
+                }
             }
 
             if(!this.lastUse) return;

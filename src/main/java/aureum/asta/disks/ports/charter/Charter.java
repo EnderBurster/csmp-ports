@@ -14,16 +14,13 @@ import aureum.asta.disks.ports.charter.common.init.CharterItems;
 import aureum.asta.disks.ports.charter.common.init.CharterParticles;
 import aureum.asta.disks.ports.charter.common.recipe.CharterRecipes;
 import aureum.asta.disks.ports.charter.common.util.GauntletPacket;
-import java.awt.Color;
-import java.util.ArrayList;
-import java.util.UUID;
-
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.client.rendering.v1.WorldRenderEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents.After;
+import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
 import net.fabricmc.fabric.api.networking.v1.PacketSender;
+import net.fabricmc.fabric.api.networking.v1.PlayerLookup;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -32,6 +29,10 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.network.ServerPlayNetworkHandler;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Identifier;
+
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.UUID;
 
 public class Charter implements ModInitializer {
    public static final String MODID = "charter";
@@ -95,7 +96,18 @@ public class Charter implements ModInitializer {
       });
    }
 
+   public static void sendAnimationToTracking(ServerPlayerEntity source) {
+      PacketByteBuf buf = PacketByteBufs.create();
+      buf.writeUuid(source.getUuid());
+
+      for (ServerPlayerEntity tracking : PlayerLookup.tracking(source)) {
+         ServerPlayNetworking.send(tracking, CharterPackets.PLAY_ANIMATION, buf);
+      }
+      ServerPlayNetworking.send(source, CharterPackets.PLAY_ANIMATION, buf);
+   }
+
    public static Identifier id(String name) {
       return new Identifier("charter", name);
    }
 }
+
